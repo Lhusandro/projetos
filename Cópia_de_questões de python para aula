@@ -1,0 +1,307 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN40CXAZSLpaR2MPFZxE630",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lhusandro/projetos/blob/master/C%C3%B3pia_de_quest%C3%B5es%20de%20python%20para%20aula\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wn3_OJIPfiKj",
+        "outputId": "66653eb8-fc4f-4597-c898-1f06c2be93b4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá seja bem vindo\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('Olá seja bem vindo')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print ('Olá turma, que bom estarmos aqui reunidos!')\n",
+        "nome = 'Lhusandro'\n",
+        "disciplina = 'Física'\n",
+        "print (f'Meu nome é {nome}, e leciono: {disciplina}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S2aoZCkPguep",
+        "outputId": "b27af1c9-3286-41f0-939d-3a940c6e3c03"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá turma, que bom estarmos aqui reunidos!\n",
+            "Meu nome é Lhusandro, e leciono: Física\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# criar uma variavel para armazenar ovalor da massa\n",
+        "massa = float(input(\"Informe a massa do soluto (em g):   \"))\n",
+        "# Armazenar o volume\n",
+        "volume = float(input('Digite o volume do solvente (em L):  '))\n",
+        "# Armazenar o resultado do cálculo\n",
+        "concentracao = massa/volume\n",
+        "#Exibe o resultado\n",
+        "print(f\"Quantidade de concentração: {concentracao:.2f} mg/L\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ngaGKHcOhOc5",
+        "outputId": "f24385fa-03b7-439b-8c8c-596fed335f39"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe a massa do soluto (em g):   3.8\n",
+            "Digite o volume do solvente (em L):  2.5\n",
+            "Quantidade de concentração: 1.52 mg/L\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#calcular área do trapézio\n",
+        "#Valor da base maior\n",
+        "basemaior = float(input('Digite o valor da base maior: '))\n",
+        "# Valor da base menor\n",
+        "basemenor = float(input('Digite o valor da base menor:  '))\n",
+        "# Valor da altura\n",
+        "altura = float(input('Digite o valor da altura:   '))\n",
+        "# Calculo da área do trapézio\n",
+        "area_trapezio = ((basemaior + basemenor) * altura) / 2\n",
+        "#exibir o resultado\n",
+        "print(f\"Aárea do trapézio é de : {area_trapezio:.2f} u²\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fDKfj1CDjybu",
+        "outputId": "634215a4-cea9-468c-9ff0-a8309a834877"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor da base maior: 6\n",
+            "Digite o valor da base menor:  3\n",
+            "Digite o valor da altura:   4\n",
+            "Aárea do trapézio é de : 18.00 u²\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Questão 3\n",
+        "# armazena a massa do objeto\n",
+        "massa = float(input(\"digite a massa do objeto (em kg):\"))\n",
+        "# armazena a velocidade\n",
+        "velocidade = float(input('digite a velçocidade do objeto (em m/s):'))\n",
+        "energia_cinetica = (1/2) * massa * (velocidade ** 2)\n",
+        "print(f\"A energia cinética do objeto é de {energia_cinetica:.2f}J \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nl8Jfn86l7ki",
+        "outputId": "ce2748a6-a431-4e8c-9441-0c30f91a3427"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a massa do objeto (em kg):5\n",
+            "digite a velçocidade do objeto (em m/s):4\n",
+            "A energia cinética do objeto é de 40.00J \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#questão 4\n",
+        "# Armazenar o peso do usuário\n",
+        "peso = float(input('Digite o seu peso:'))\n",
+        "# calculo da quantidade diaria de agua\n",
+        "agua = (peso * 35) / 1000\n",
+        "#exibe a quantidade de agua exigida\n",
+        "print(f'A quantidade ideal de agua para voce por dia é de: {agua:.2f} litros')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V6N5I5CGpHR6",
+        "outputId": "9a461124-1300-4d29-f13e-4726c50b549d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu peso:150\n",
+            "A quantidade ideal de agua para voce por dia é de: 5.25 litros\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#questão 6\n",
+        "# Armazena distancia no MAPa\n",
+        "distancia_mapa = float(input('digite a distancia do mapa em cm: '))\n",
+        "# armazena a distancia Real\n",
+        "distancia_real = float(input('digite a distancia real em km:'))\n",
+        "# Calcular a distancia real em cm\n",
+        "distancia_real_cm = distancia_real * 100000\n",
+        "# calcular a escala do mapa\n",
+        "escala = distancia_real_cm / distancia_mapa\n",
+        "print(f\"a escala do mapa é de 1:{int(escala)}.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GjCJ024wukv5",
+        "outputId": "f32c77bf-e01e-4904-9685-9658a78bf369"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a distancia do mapa em cm: 4\n",
+            "digite a distancia real em km:300\n",
+            "a escala do mapa é de 1:7500000.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# armazena a população inicial\n",
+        "pop_inicial = int(input('digite a população inicial:'))\n",
+        "# armazena a população final\n",
+        "pop_final = int(input('digite a população final'))\n",
+        "# calculo\n",
+        "taxapop = ((pop_final - pop_inicial) /pop_inicial) * 100\n",
+        "print(f'a taxa de crescimento dessa cidade é de {taxapop:.2f} %.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CFgJyy341H7w",
+        "outputId": "d53f417c-9283-4799-a2e9-6274c417b256"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a população inicial:3000\n",
+            "digite a população final8000\n",
+            "a taxa de crescimento dessa cidade é de 166.67 %.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# calcular o consumo de energia eletrica\n",
+        "# potencia em watts e o tempo de uso em horas\n",
+        "# armazenar a potencia em uma variável\n",
+        "potencia = float(input('digite a potencia em w:'))\n",
+        "# armazenar o tempo\n",
+        "tempo = float(input('digite o tempo em horas:'))\n",
+        "# cáculo do consumo\n",
+        "consumo = (potencia * tempo) /1000\n",
+        "print(f'O consumo de energia elétrica foi de {consumo:.2f} kwh')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m6uYiTi126ru",
+        "outputId": "852fad4b-fe14-4303-8888-410207d7436f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "digite a potencia em w:4\n",
+            "digite o tempo em horas:720\n",
+            "O consumo de energia elétrica foi de 2.88 kwh\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
